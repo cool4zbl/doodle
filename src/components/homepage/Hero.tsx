@@ -1,0 +1,24 @@
+import clsx from "clsx";
+import React, { FunctionComponent } from "react";
+
+// @ts-ignore
+import styles from "./Hero.module.scss";
+
+export const Hero: FunctionComponent = () => {
+  return (
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <div className="container">
+        <h1 className={clsx("hero__title", styles.title)}>
+          Hi. I'm <span className={styles.highlighted}>Binliu Zhang</span>,
+          <br />
+          Senior Software Engineer.
+        </h1>
+        <p className={clsx("hero__subtitle", styles.subtitle)}>
+          interested in personal growth and tech trends.
+          <br />
+          Open-source enthusiast.
+        </p>
+      </div>
+    </header>
+  );
+};
