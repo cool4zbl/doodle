@@ -54,7 +54,10 @@ const config = {
         blog: {
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
+          // TODO:
           editUrl: 'https://github.com/cool4zbl/doodles/tree/main/',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'Doodles',
           feedOptions: {
             type: 'all',
             copyright: `Copyright © 2014 - ${new Date().getFullYear()} Binliu Zhang`
