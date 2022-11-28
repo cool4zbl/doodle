@@ -91,11 +91,11 @@ const config = {
       },
       navbar: {
         title: 'Binliu Zhang',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-          href: '/'
-        },
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'img/logo.png',
+        //   href: '/'
+        // },
         items: [
           {
             type: 'doc',
@@ -118,12 +118,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Algorithms',
-                to: '/docs/dsa',
-              },
-              {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'Algorithms',
+                to: '/docs/dsa',
               },
             ],
           },
