@@ -20,16 +20,15 @@ DigitalOcean很贴心的有Ghost的APP安装镜像包，安装后直接打开```
 
 <!--truncate-->
 
-很喜欢**[Medium](https://medium.com/)**那个网站的设计风格，漂亮的排版和字体，恰当的行高，带有震撼般视觉冲击的大Banner图片...[^1]
+很喜欢 **[Medium](https://medium.com/)** 那个网站的设计风格，漂亮的排版和字体，恰当的行高，带有震撼般视觉冲击的大Banner图片...[^1]
 [^1]: 知乎[怎样评价Medium的设计](http://zhi.hu/1Ed2) 
 感觉一切的设计都如此恰到好处（一股浓浓的高逼格气息扑面而来）。
-谷歌搜索类Medium的Ghost主题，
-<b> **[Ghostium](http://ghostium.oswaldoacauan.com/)**, a medium-like theme.
-</b>
+谷歌搜索类Medium的Ghost主题，**[Ghostium](http://ghostium.oswaldoacauan.com/)**, a medium-like theme.
+
 先给作者[@oswaldoacauan](https://twitter.com/oswaldoacauan)各种点赞，想要的样式全都有。
 但是在网站上跑了一会后，发现有些细节地方还是不尽入我意。  
 那么，还是自己动手丰衣足食，开始*万劫不复的折腾深渊* 第四弹。
-一边看[Ghost Developer Documentation](http://themes.ghost.org/v0.5.3/docs/about)、[Handelbars.js Guide](http://handlebarsjs.com/)，一边用自学的一点点 HTML&CSS&JS 来调试和修改原主题。
+一边看 [Ghost Developer Documentation](http://themes.ghost.org/v0.5.3/docs/about)、[Handelbars.js Guide](http://handlebarsjs.com/)，一边用自学的一点点 HTML&CSS&JS 来调试和修改原主题。
 
 ---
 
@@ -147,31 +146,36 @@ font-family: Optima, sans-serif;
   
 3. 全局导航栏(drawer.hbs)  
 	每个导航栏(.drawer-list-item)字体过小，且挨得太近。参考了一下我最喜欢的**Medium**设计后，修改如下：  
-```language-css
+	```language-css
 	 .drawer-list-item {
-    font-family: "Lato","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-    font-weight: 600;
-    font-size: .9em;
-    color: #9c9c9c;
-    line-height: 2.2;
-	}```
+		font-family: "Lato","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+		font-weight: 600;
+		font-size: .9em;
+		color: #9c9c9c;
+		line-height: 2.2;
+	}
+	 ```
 
 4. 博客内容分页(post.hbs)  
 	对于作者的头像```.post-author-avatar```，原作者可能了为了保证质量，头像不被随意拉伸，```language-css .post-author-avatar { width: 100%; height: 100%; border-radius: 100% }```，采取了长宽度100%，但是四个角自然圆角，所以如果传的头像是矩形就会出现椭圆形的效果，但是个人觉得还是圆形头像更精致。所以为了保证无论上传何种比例的图片，得到的都是圆形的头像，那么就采用固定长宽度（此处在看Ghost后台时候，发现默认的作者头像就是圆形，查看源代码发现使用的是```js-model-image```，涉及到JS还未深入研究）。   
-	```language-css 
+	
+	```css
 	.post-author-avatar {
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin-bottom: 10px
-	} ```
+		width: 80px;
+		height: 80px;
+		display: block;
+		margin-bottom: 10px
+	} 
+	```
 
----
+
 大体地方修改完毕，把修改后主题上传到VPS，重启Ghost服务（Ghost无法实时探测到```content/theme/```内容改变）。  
 Well done.
 
 优化：  
 对于谷歌字体在国内~~访问速度不佳~~无法访问，使用了[360网站卫士加速库](http://libs.useso.com/) ```language-html <link href="//fonts.useso.com/css?family=***">```
+
+---
 
 待解决问题：
 - 微博官方的分享按钮太花哨，想使用FontAwesome的图标但还未解决如何触发微博分享；  

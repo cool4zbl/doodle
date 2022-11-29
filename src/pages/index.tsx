@@ -42,6 +42,9 @@ export default function Home(): JSX.Element {
           <div className="container padding-vert">
               Feature Posts
           </div>
+          <div className="container padding-vert">
+
+          </div>
         {/*<HomepageFeatures />*/}
       </main>
     </Layout>

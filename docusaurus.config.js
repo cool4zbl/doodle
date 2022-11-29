@@ -100,13 +100,19 @@ const config = {
         //   href: '/'
         // },
         items: [
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'doc',
             docId: 'dsa',
             position: 'left',
-            label: 'DSA',
+            label: 'Algorithm',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/bookshelf',
+            docId: 'bookshelf',
+            position: 'left',
+            label: 'Bookshelf',
+          },
           {
             href: 'https://github.com/cool4zbl/doodles',
             label: 'GitHub',
@@ -115,10 +121,10 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'Discover',
             items: [
               {
                 label: 'Blog',
@@ -127,6 +133,10 @@ const config = {
               {
                 label: 'Algorithms',
                 to: '/docs/dsa',
+              },
+              {
+                label: 'Bookshelf',
+                to: '/bookshelf',
               },
             ],
           },
