@@ -1,10 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import {Hero} from "@site/src/components/homepage/Hero";
+import {AboutMe} from "@site/src/components/homepage/AboutMe";
+import Link from '@docusaurus/Link';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import AboutMeDesc from "./assets/_about_me.md";
 
 import styles from './index.module.css';
 
@@ -37,10 +39,10 @@ export default function Home(): JSX.Element {
       <Hero />
       <main>
           <div className="container padding-vert">
-              About Me component
+              Feature Posts
           </div>
           <div className="container padding-vert">
-              Feature Posts
+              <AboutMe avatar={""} descriptionComponent={<AboutMeDesc />} />
           </div>
           <div className="container padding-vert">
 
