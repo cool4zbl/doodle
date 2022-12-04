@@ -1,11 +1,15 @@
-Hi There
+### Hi there 👋
 
-This is Binliu!
+I'm a highly motivated and enthusiastic software engineer with 7+ YOE in large-scale web development, currently working on a Geo data collection platform using **Go** and **TypeScript**.
 
-I write back-end applications in Go and modern front-ends using TypeScript (React.js).
+I strive to build applications and libraries that countless people will find useful. I’m actively learning and exploring the fascination of **algorithms** and **distributed systems**.
 
-I am a highly motivated and
-passionate software engineer. You'll mostly find me working with
-JavaScript on both client and server side. I strive to build web
-applications and libraries that countless people will find
-useful.
+Check out my [Resume](./binliu-zhang-resume.pdf).
+
+⚡ Fun facts: 
+  - 🤓 Self-taught software engineer, from EE to CS
+  - 👩‍🎤 Music saves me
+  - 😌 Obsession with all aesthetic designs
+  - 🛠 Tool enthusiast / Productivity-driven / Vimer
+  - 💪 Life tenet: Stay hungry; stay foolish.
+

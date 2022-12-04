@@ -114,6 +114,12 @@ const config = {
             label: 'Bookshelf',
           },
           {
+            to: '/about',
+            docId: 'about',
+            position: 'left',
+            label: 'About',
+          },
+          {
             href: 'https://github.com/cool4zbl/doodles',
             label: 'GitHub',
             position: 'right',

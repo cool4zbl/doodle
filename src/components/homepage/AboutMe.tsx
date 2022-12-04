@@ -13,7 +13,7 @@ export const AboutMe: FunctionComponent<AboutMeProps> = ({
  }) => {
     return (
         <div className="margin-top--lg">
-            <h2>About me</h2>
+            <h1>About Me - Binliu Zhang</h1>
             <div className="row">
                 <div className="col col--6">{descriptionComponent}</div>
                 <div className={clsx("col col--5", styles.avatarContainer)}>
@@ -22,9 +22,9 @@ export const AboutMe: FunctionComponent<AboutMeProps> = ({
                             src={avatar}
                             style={{
                                 borderRadius: "50%",
-                                height: 130,
+                                height: 300,
                                 marginLeft: 10,
-                                width: 130,
+                                width: 300,
                             }}
                          alt={"binliu avatar"}/>
                     </div>
