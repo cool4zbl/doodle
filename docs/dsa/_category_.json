@@ -1,7 +1,8 @@
 {
-  "label": "Data Structure",
+  "label": "Data Structure & Algo",
   "position": 1,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "My ideas of leetcode puzzles / algorithms"
   }
 }

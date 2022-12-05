@@ -100,7 +100,9 @@ const config = {
         //   href: '/'
         // },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog',
+            label: 'Blog',
+            position: 'left'},
           {
             type: 'doc',
             docId: 'dsa/intro',
