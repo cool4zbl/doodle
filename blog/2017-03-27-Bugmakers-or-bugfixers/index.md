@@ -113,4 +113,4 @@ tags: [thoughts, work]
 
    （很无聊的 Bouns:  How to become a bugs fixer in JavaScript way ...
 
-![Become a bugFixer in JavaScript way](./bug-fixers.png)
+![Become a bugFixer in JavaScript way](bug-fixers.png)

@@ -398,10 +398,10 @@ const App = () => (
 React Virtual DOM ==> render ==> DOM
 
 ```javascript
-ReactComponent render(
-  ReactElement element,
-  DOMElement container,
-  [function callback]
+ReactComponent.render(
+  ReactElement.element,
+  DOMElement.container,
+  [function callback],
 )
 ```
 
