@@ -6,13 +6,9 @@ tags: [interview, tech, frontend]
 
 # 写在百度电面后
 
-
 Desperado.
 
-<figure>
-![road to the sky](http://zbl-ghost-backup.qiniudn.com/blogcover_roadtothesky_2880x900.jpg)
-<figcaption>Road to the sky.</figcaption>
-</figure>
+![road to the sky](./road_to_sky.jpg)
 
 
 睡得昏昏沉沉的早上，突然接到了电话，在从惊呆到真呆中，就这么面完了百度。
@@ -23,6 +19,8 @@ Desperado.
 “呃，我叫XXX，是电子科大电子信息工程的大四学生...呃，我喜欢互联网及互联网开发…最近一直在自学…嗯。”
 “完了吗？”
 “说完了。” 当时我就在想，完了。脑袋空白。
+
+<!--truncate-->
 
 “电子信息工程的是吗？那你先解释下傅里叶变换吧。”
 简直惊呆，我这是面的前端吗？第一个问题就这么脑子转不过来了，都好久没有看专业书。

@@ -18,15 +18,7 @@ export const AboutMe: FunctionComponent<AboutMeProps> = ({
                 <div className="col col--7">{descriptionComponent}</div>
                 <div className={clsx("col col--4", styles.avatarContainer)}>
                     <div className={styles.avatar}>
-                        <img
-                            src={avatar}
-                            style={{
-                                borderRadius: "50%",
-                                height: 300,
-                                marginLeft: 10,
-                                width: 300,
-                            }}
-                         alt={"binliu avatar"}/>
+                        <img src={avatar} alt={"binliu avatar"}/>
                     </div>
                 </div>
             </div>

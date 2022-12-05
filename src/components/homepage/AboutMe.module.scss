@@ -7,7 +7,7 @@
   }
 }
 
-$avatar-size: 310px;
+$avatar-size: 320px;
 .avatar {
   display: block;
   max-width: $avatar-size;
@@ -15,7 +15,7 @@ $avatar-size: 310px;
 
   img,
   & > div {
-    border-radius: 999px;
+    border-radius: 50%;
     max-height: $avatar-size;
   }
 
