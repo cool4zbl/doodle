@@ -233,7 +233,7 @@ https://github.intra.douban.com/zhangbinliu/ast_demo/tree/esprima
 但是最终，jscodeshift 的输出 API 却简洁明了，只要一行代码即可搞定。
 
 ```javascript
-.toSource({quote: 'single'}); // sets strings to use single quotes in transformed code.
+ .toSource({quote: 'single'}); // sets strings to use single quotes in transformed code.
 ```
 
 （其实 Recast 在这做了[大量的工作]((https://github.com/benjamn/recast/blob/master/lib/printer.js) )）
@@ -254,12 +254,12 @@ jscodeshift -t <transform.js> /to/file/path
 
 #### Problem:
 
-<code>
+```js
 // Before
 'Hello, ' + name + ', I am a string.'
 // After
-`Hello, ${name}, I am a string.`
-</code>
+    `Hello, ${name}, I am a string.`
+```
 
 #### Solution:
 
@@ -393,7 +393,7 @@ export default function transformer(file, api) {
 
 ## 总结 & 开脑洞
 - 总结下基本处理流程：
-  ![Process](./process.png)
+  ![Process](process.png)
 
 - AST 是很有用的一个抽象概念。一旦你理解了这些规则，唯一的限制就是解析器和你的想象力。
 - 纯 AST parse 太过于理论，既然是工程师，还是需要自己动手写点什么来解决自己实际遇到的问题。
