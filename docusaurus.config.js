@@ -10,7 +10,7 @@ const config = {
   tagline: 'Open-source enthusiast, interested in personal growth and tech trends.',
   url: 'https://zhangbinliu.me/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
@@ -24,7 +24,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh'],
+    locales: ['en'],
   },
   plugins: [
     'docusaurus-plugin-sass',
@@ -54,7 +54,6 @@ const config = {
         blog: {
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
-          // TODO:
           editUrl: 'https://github.com/cool4zbl/doodles/tree/main/',
           blogSidebarCount: 'ALL',
           blogSidebarTitle: 'Doodles',
@@ -139,7 +138,7 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'Algorithms',
+                label: 'Algorithm',
                 to: '/docs/dsa',
               },
               {
