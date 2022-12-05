@@ -14,7 +14,6 @@ export const Hero: FunctionComponent = () => {
           a software engineer.
         </h1>
         <p className={clsx("hero__subtitle", styles.subtitle)}>
-
           Open-source enthusiast, interested in personal growth and tech trends.
           <br />
           Welcome to my playground.
