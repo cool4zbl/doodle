@@ -7,9 +7,9 @@ tags: [hello, docusaurus]
 
 Hello, I started writing again.
 
-This time, I used [Docusaurus](https://docusaurus.io/), and it feels pretty good. 
+This time, I used [Docusaurus](https://docusaurus.io/), and it worked pretty good. 
 
-This website belongs to me. I hope I can continue to ponder and summarize since I believe it is a good habit.
+This is my personal website; I hope I can continue to ponder and summarize since I believe it is a good habit.
 
 ## Goal
 So I want to accomplish the following:
@@ -38,6 +38,7 @@ Yes, that's a lot to share, let's see how it goes.
 
 ## Closing words
 If you got to this point, then congratulations.
+
 Welcome to my blog. 😄
 
 

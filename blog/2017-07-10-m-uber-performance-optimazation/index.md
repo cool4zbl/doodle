@@ -102,7 +102,7 @@ Preact 据说在组件和元素回收可能有点点问题，不过他们还是�
 
 于是我用这个工具来分析了下自己的项目 `creator-main-js`。
 
-![creator-js-source-map-explorer](/img/m_uber/creator-js-source-map-explorer.png)
+![creator-js-source-map-explorer](./creator-js-source-map-explorer.png)
 
 
 
