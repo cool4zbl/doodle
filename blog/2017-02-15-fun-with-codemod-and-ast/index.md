@@ -254,18 +254,18 @@ jscodeshift -t <transform.js> /to/file/path
 
 #### Problem:
 
-```js
+```javascript
 // Before
 'Hello, ' + name + ', I am a string.'
 // After
-    `Hello, ${name}, I am a string.`
+`Hello, ${name}, I am a string.`
 ```
 
 #### Solution:
 
 1. Simplify， 简化问题，考虑一个最简单的情况
 
-```js
+```javascript
 // Before
 a + b
 // After
