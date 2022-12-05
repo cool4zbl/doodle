@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Binliu Zhang, Senior Software Engineer',
-  tagline: 'Software engineer interested in personal growth and tech trends. Open-source enthusiast.',
+  tagline: 'Open-source enthusiast, interested in personal growth and tech trends.',
   url: 'https://zhangbinliu.me/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -103,7 +103,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'doc',
-            docId: 'dsa',
+            docId: 'dsa/intro',
             position: 'left',
             label: 'Algorithm',
           },
