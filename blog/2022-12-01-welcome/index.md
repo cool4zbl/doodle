@@ -19,6 +19,8 @@ So I want to accomplish the following:
 - improve my English(as a non-native English speaker);
 - become more self-disciplined so that I have more time for the activities listed above.
 
+<!--truncate-->
+
 ## Topic
 While I have a few ideas for new blog posts in mind, I don't want to limit myself to just technical topics. Instead, I will probably touch on different areas of my interest, such as:
 
@@ -36,7 +38,7 @@ Yes, that's a lot to share, let's see how it goes.
 
 ## Closing words
 If you got to this point, then congratulations.
-Welcome to my blog.
+Welcome to my blog. 😄
 
 
 
