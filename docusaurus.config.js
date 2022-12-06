@@ -26,6 +26,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
   plugins: [
     'docusaurus-plugin-sass',
      [
@@ -65,6 +66,9 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
+        gtag: {
+          trackingID: 'G-4KXY97F1RE',
+        }
       }),
     ],
   ],
