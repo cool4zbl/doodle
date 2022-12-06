@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'cool4zbl', // Usually your GitHub org/user name.
-  projectName: 'doodles', // Usually your repo name.
+  projectName: 'doodle', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -49,12 +49,12 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cool4zbl/doodles/tree/main/',
+            'https://github.com/cool4zbl/doodle/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/cool4zbl/doodles/tree/main/',
+          editUrl: 'https://github.com/cool4zbl/doodle/tree/main/',
           blogSidebarCount: 'ALL',
           blogSidebarTitle: 'Doodles',
           feedOptions: {
@@ -121,7 +121,7 @@ const config = {
             label: 'About',
           },
           {
-            href: 'https://github.com/cool4zbl/doodles',
+            href: 'https://github.com/cool4zbl/doodle',
             label: 'GitHub',
             position: 'right',
           },
