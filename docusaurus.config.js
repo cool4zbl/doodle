@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Binliu Zhang, Senior Software Engineer',
+  title: 'Binliu Zhang',
   tagline: 'Open-source enthusiast, interested in personal growth and tech trends.',
   url: 'https://zhangbinliu.me/',
   baseUrl: '/',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cool4zbl', // Usually your GitHub org/user name.
-  projectName: 'doodle', // Usually your repo name.
+  organizationName: 'cool4zbl',
+  projectName: 'doodle',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -85,7 +85,7 @@ const config = {
         {
           name: "keywords",
           content:
-            "fullstack,backend,developer,engineer,go,golang,javascript,node,grpc,rest,react,reactjs,cloud,cloud-native,open-source,gophers,distributed-systems,algorithms,data-structures",
+            "self-belief,growth-mindset,personal-growth,motivation,brave,fullstack,backend,developer,engineer,go,golang,javascript,node,grpc,rest,react,reactjs,cloud,cloud-native,open-source,gophers,distributed-systems,algorithms,data-structures",
         },
         {
           name: "twitter:card",
@@ -103,20 +103,28 @@ const config = {
         //   href: '/'
         // },
         items: [
-          {to: '/blog',
+          {
+            to: '/blog',
             label: 'Blog',
-            position: 'left'},
+            position: 'left'
+          },
           {
             type: 'doc',
             docId: 'dsa/intro',
             position: 'left',
-            label: 'Algorithm',
+            label: 'Learning',
           },
           {
             to: '/bookshelf',
             docId: 'bookshelf',
             position: 'left',
             label: 'Bookshelf',
+          },
+          {
+            to: '/motivation',
+            docId: 'motivation',
+            position: 'left',
+            label: 'Motivation',
           },
           {
             to: '/about',
@@ -142,7 +150,7 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'Algorithm',
+                label: 'Learning',
                 to: '/docs/dsa',
               },
               {

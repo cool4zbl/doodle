@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, {FunctionComponent} from "react";
 import clsx from "clsx";
 import styles from "./AboutMe.module.scss";
 
@@ -13,7 +13,7 @@ export const AboutMe: FunctionComponent<AboutMeProps> = ({
  }) => {
     return (
         <div className="margin-top--lg">
-            <h1>About Me - Binliu Zhang</h1>
+            {/*<h1>About Me - Binliu Zhang</h1>*/}
             <div className="row">
                 <div className="col col--7">{descriptionComponent}</div>
                 <div className={clsx("col col--4", styles.avatarContainer)}>
