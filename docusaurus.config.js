@@ -1,9 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-import lightCodeTheme from "prism-react-renderer/themes/github";
-import darkCodeTheme from "prism-react-renderer/themes/dracula";
-import {description, keywords} from "./meta.json";
+const { description, keywords } = require("./meta.json");
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
