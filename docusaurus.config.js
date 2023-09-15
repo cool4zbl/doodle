@@ -1,36 +1,37 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const metadata = require('./metadata.json')
+import lightCodeTheme from "prism-react-renderer/themes/github";
+import darkCodeTheme from "prism-react-renderer/themes/dracula";
+import {description, keywords} from "./meta.json";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Binliu Zhang',
-  tagline: 'Open-source enthusiast, interested in personal growth and tech trends.',
-  url: 'https://zhangbinliu.me/',
-  baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "Binliu Zhang",
+  tagline:
+    "Open-source enthusiast, interested in personal growth and tech trends.",
+  url: "https://zhangbinliu.me/",
+  baseUrl: "/",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cool4zbl',
-  projectName: 'doodle',
+  organizationName: "cool4zbl",
+  projectName: "doodle",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   plugins: [
-    'docusaurus-plugin-sass',
-     [
+    "docusaurus-plugin-sass",
+    [
       "@docusaurus/plugin-ideal-image",
       {
         quality: 85,
@@ -44,32 +45,31 @@ const config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/cool4zbl/doodle/tree/main/',
+          editUrl: "https://github.com/cool4zbl/doodle/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/cool4zbl/doodle/tree/main/',
-          blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'Doodles',
+          editUrl: "https://github.com/cool4zbl/doodle/tree/main/",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "Doodles",
           feedOptions: {
-            type: 'all',
-            copyright: `Copyright © 2014 - ${new Date().getFullYear()} Binliu Zhang`
-          }
+            type: "all",
+            copyright: `Copyright © 2014 - ${new Date().getFullYear()} Binliu Zhang`,
+          },
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.scss'),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
         gtag: {
-          trackingID: 'G-4KXY97F1RE',
-        }
+          trackingID: "G-4KXY97F1RE",
+        },
       }),
     ],
   ],
@@ -77,14 +77,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-       metadata: [
+      metadata: [
         {
           name: "description",
-          content: meta.description,
+          content: description,
         },
         {
           name: "keywords",
-          content: meta.keywords.join(","),
+          content: keywords.join(","),
         },
         {
           name: "twitter:card",
@@ -95,7 +95,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Binliu Zhang',
+        title: "Binliu Zhang",
         // logo: {
         //   alt: 'My Site Logo',
         //   src: 'img/logo.png',
@@ -103,58 +103,58 @@ const config = {
         // },
         items: [
           {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
+            to: "/blog",
+            label: "Blog",
+            position: "left",
           },
           {
-            type: 'doc',
-            docId: 'dsa/intro',
-            position: 'left',
-            label: 'Learning',
+            type: "doc",
+            docId: "dsa/intro",
+            position: "left",
+            label: "Learning",
           },
           {
-            to: '/bookshelf',
-            docId: 'bookshelf',
-            position: 'left',
-            label: 'Bookshelf',
+            to: "/bookshelf",
+            docId: "bookshelf",
+            position: "left",
+            label: "Bookshelf",
           },
           {
-            to: '/motivation',
-            docId: 'motivation',
-            position: 'left',
-            label: 'Motivation',
+            to: "/motivation",
+            docId: "motivation",
+            position: "left",
+            label: "Motivation",
           },
           {
-            to: '/about',
-            docId: 'about',
-            position: 'left',
-            label: 'About',
+            to: "/about",
+            docId: "about",
+            position: "left",
+            label: "About",
           },
           {
-            href: 'https://github.com/cool4zbl/doodle',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/cool4zbl/doodle",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'light',
+        style: "light",
         links: [
           {
-            title: 'Discover',
+            title: "Discover",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'Learning',
-                to: '/docs/dsa',
+                label: "Learning",
+                to: "/docs/dsa",
               },
               {
-                label: 'Bookshelf',
-                to: '/bookshelf',
+                label: "Bookshelf",
+                to: "/bookshelf",
               },
             ],
           },
@@ -170,8 +170,8 @@ const config = {
                 href: "https://www.linkedin.com/in/binliu-zhang",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/cool4zbl',
+                label: "GitHub",
+                href: "https://github.com/cool4zbl",
               },
             ],
           },
@@ -185,4 +185,4 @@ const config = {
     }),
 };
 
-module.exports = config;
+export default config;
