@@ -1,9 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+import meta from "./meta.json";
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Binliu Zhang',
@@ -79,13 +80,11 @@ const config = {
        metadata: [
         {
           name: "description",
-          content:
-            "I am senior software developer interested in technology and gadgets. Go / JavaScript / open-source enthusiast.",
+          content: meta.description,
         },
         {
           name: "keywords",
-          content:
-            "self-belief,growth-mindset,personal-growth,motivation,brave,fullstack,backend,developer,engineer,go,golang,javascript,node,grpc,rest,react,reactjs,cloud,cloud-native,open-source,gophers,distributed-systems,algorithms,data-structures",
+          content: meta.keywords.join(","),
         },
         {
           name: "twitter:card",
