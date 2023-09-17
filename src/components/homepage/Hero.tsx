@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React, { FunctionComponent } from "react";
 
-// @ts-ignore
 import styles from "./Hero.module.scss";
 
 export const Hero: FunctionComponent = () => {

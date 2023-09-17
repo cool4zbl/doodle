@@ -13,7 +13,6 @@ export const AboutMe: FunctionComponent<AboutMeProps> = ({
 }) => {
   return (
     <div className="margin-top--lg">
-      {/*<h1>About Me - Binliu Zhang</h1>*/}
       <div className="row">
         <div className="col col--7">{descriptionComponent}</div>
         <div className={clsx("col col--4", styles.avatarContainer)}>

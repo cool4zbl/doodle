@@ -38,6 +38,6 @@ shared by Julia Evans
 - 🎮 Breaking a sweat with my Switch
 - 📚 Immersing myself in [books](./bookshelf)
 - 🍳 Whipping up culinary delights
-- 🚴‍♀️‍️Biking through the scenic routes of the Netherlands
+- 🚴‍♀️‍️ Biking through the scenic routes of the Netherlands
 
 Curious about my professional journey? Here's my [Resume](./binliu-zhang-resume.pdf).
