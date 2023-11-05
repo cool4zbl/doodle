@@ -13,8 +13,7 @@ tags: [SEO, shares, tech]
 
 ---
 
-
-### 1. SEO：Search Engine Optimazition
+### 1. SEO：Search Engine Optimization
 
 产品：搜索引擎优化，促进内容网站信息分享／传播，提高目标转化率，留存率
 
@@ -148,17 +147,16 @@ tags: [SEO, shares, tech]
 ```
 
 
-
 #### 2. 给 m 站大部分页面增加了 SEO Meta Tags
 
 之前分享出去抓不到自定义的 description 和 image ，现默认分享到 weixin 的 title 、 description 、image 值都和 Open Graph 一样，也可以自定义。
 
 默认情况下
 
-- `og:title`， ` og:description` 和之前的 title, description 一样；
+- `og:title`，` og:description` 和之前的 title, description 一样；
 
 
-- `og:url` ： 当前页面 url；
+- `og:url`： 当前页面 url；
 - `og:image`：
   -  小组帖子页和单个日记页如有图片，则为第一张图片的 src url，没有的话为现在默认的分享 icon src url；
   -  条目页的均为该条目的 image src url；
@@ -169,8 +167,8 @@ tags: [SEO, shares, tech]
 - **Hashtag 页**
 
   - image: 运营头图 || 豆 icon；
-  - title: { hashtag_name} - 豆瓣；
-  - description: 运营描述 || '有关#{ hashtag_name }#的话题讨论，豆瓣用户参与的精彩话题'；
+  - title: `{ hashtag_name} - 豆瓣`；
+  - description: 运营描述 || '有关`#{ hashtag_name }`#的话题讨论，豆瓣用户参与的精彩话题'；
 
 - **单条广播页**
 
@@ -188,7 +186,6 @@ tags: [SEO, shares, tech]
   - http://github.intra.douban.com/frodo/Talion/blob/23fe149cc3186f15195634cca774861d3ce9efca/libs/image.py#L11
   - `from douban.image.qiniu import qiniu_proxy_url`
 
-  ​
 
 效果截屏：
 

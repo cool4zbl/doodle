@@ -1,4 +1,8 @@
-# System Design Intro
+---
+sidebar_position: 1
+---
+
+# Intro
 
 Hello, here are my notes about System Design.
 
