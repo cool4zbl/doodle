@@ -18,7 +18,8 @@ tags: [interview, tech, frontend]
 ---
 关于CSS，有题是用`HTML&CSS`实现一个九宫格，外边框为1px，内部无边框。之前没有做过九宫格布局，当时又很捉急居然被卡住了。交完卷后突然在想，这不就是考`float`的嘛。
 遂编码如下：
-```language-html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,7 +105,8 @@ Ajax show time, finally.
 之前只写过几个Ajax，并不是太熟练，所以这题拿不准。
 既然给了URL，一般就是要考`RegExp`啦，但是这个只要根据`id`查询就好，是不是只用`url.split('=')`，然后就知道ID了呢？
 HTTP接口应该也就是写个函数模块吧。暂时给思路如下，待完善。
-```language-javascript```
+
+```js
  $(document).ready(function(url) {
    var id = url.split('=')[1];
    $('.btn').click(function (id) {
@@ -126,12 +128,14 @@ HTTP接口应该也就是写个函数模块吧。暂时给思路如下，待完�
     });
   });
 ```
+
 ---
 
 差不多就这些了，想到新思路再来更新吧。前端坑是很多，但也很有趣，感觉自己终于入门了呢。
 还是那句，希望自己在成为大牛的道路上越走越远。
 
 ---
+
 续：觉得做的一般也收到了面试通知。但阿里又说“针对2015届招聘已结束，无论面试结果如何我们都不能承诺您能加入”。伤心归伤心，毕竟迟了那么点。
 但再怎么着也要执着走下去。
 **“It's never too late to start.”**
