@@ -16,8 +16,6 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: "cool4zbl",
   projectName: "doodle",
 
@@ -52,6 +50,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/cool4zbl/doodle/tree/main/",
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -131,10 +130,12 @@ const config = {
             position: "left",
             label: "About",
           },
+          // Right
           {
             href: "https://github.com/cool4zbl/doodle",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
