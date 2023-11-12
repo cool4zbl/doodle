@@ -13,14 +13,14 @@ So I spend some time thinking about the products and strategy for my org as part
 
 Below is the architecture of an internal operation platform.
 
-- [Internal Ops Platform](./int-ops-platform.png)
+![Internal Ops Platform](./int-ops-platform.png)
 
 ## Internal Platform Architecture
 
 Below is the architecture of an internal platform, which integrate several internal operation platforms into one
 platform.
 
-- [Internal Platform](./int-ops-w-platform.png)
+![Internal Platform](./int-ops-w-platform.png)
 
 ## Dilemma and Challenges
 ## Product Mindset
