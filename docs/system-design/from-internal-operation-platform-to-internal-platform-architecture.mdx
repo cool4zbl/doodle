@@ -1,3 +1,13 @@
+---
+title: From Internal Operation Platform to Internal Platform
+---
+export const replaceImgLink = (link) => {
+    const isDarkMode = document.getElementsByTagName('html')[0].attributes['data-theme'].value === 'dark'
+    const l = link.replace(/(.*).(png|jpg|jpeg)/img, `$1${isDarkMode ? '_dark' : ''}.$2`)
+    console.log('isDarkMode', isDarkMode, l)
+    return l
+}
+
 # From Internal Operation Platform to Internal Platform
 
 I've been design / developing some internal platform for recent years, many of them are for our operators and developers
@@ -13,14 +23,15 @@ So I spend some time thinking about the products and strategy for my org as part
 
 Below is the architecture of an internal operation platform.
 
-![Internal Ops Platform](./int-ops-platform.png)
+![Internal Operation Platform Architecture](./int_ops_platform.png#light-mode)![Internal Operation Platform Architecture](./int_ops_platform_dark.png#dark-mode)
+
 
 ## Internal Platform Architecture
 
 Below is the architecture of an internal platform, which integrate several internal operation platforms into one
 platform.
 
-![Internal Platform](./int-ops-w-platform.png)
+![Internal Platform Architecture](./int_ops_w_platform.png#light-mode)![Internal Operation Platform Architecture](./int_ops_w_platform_dark.png#dark-mode)
 
 ## Dilemma and Challenges
 ## Product Mindset
