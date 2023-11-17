@@ -102,15 +102,15 @@ const config = {
         // },
         items: [
           {
+            type: "doc",
+            docId: "docs",
+            position: "left",
+            label: "Learning",
+          },
+          {
             to: "/blog",
             label: "Blog",
             position: "left",
-          },
-          {
-            type: "doc",
-            docId: "dsa/intro",
-            position: "left",
-            label: "Learning",
           },
           {
             to: "/bookshelf",

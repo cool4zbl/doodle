@@ -1,8 +1,7 @@
 {
   "label": "Front-End",
-  "position": 3,
+  "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "My notes of some front-end technologies"
+    "type": "generated-index"
   }
 }
