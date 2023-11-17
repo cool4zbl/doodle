@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Binliu Zhang",
+  title: "Binliu's Doodles",
   tagline:
     "Open-source enthusiast, interested in personal growth and tech trends.",
   url: "https://zhangbinliu.me/",
