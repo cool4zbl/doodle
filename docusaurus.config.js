@@ -146,12 +146,12 @@ const config = {
             title: "Discover",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Learning",
+                to: "/docs",
               },
               {
-                label: "Learning",
-                to: "/docs/dsa",
+                label: "Blog",
+                to: "/blog",
               },
               {
                 label: "Bookshelf",
