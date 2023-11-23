@@ -19,12 +19,14 @@ const config = {
   organizationName: "cool4zbl",
   projectName: "doodle",
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "zh"],
+    localeConfigs: {
+      zh: {
+        htmlLang: "zh-Hans",
+      },
+    },
   },
 
   plugins: [
@@ -76,6 +78,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
+      blog: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
+
       metadata: [
         {
           name: "description",
@@ -102,8 +117,8 @@ const config = {
         // },
         items: [
           {
-            type: "doc",
-            docId: "docs",
+            type: "docSidebar",
+            sidebarId: "docs",
             position: "left",
             label: "Learning",
           },
@@ -131,6 +146,10 @@ const config = {
             label: "About",
           },
           // Right
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
           {
             href: "https://github.com/cool4zbl/doodle",
             position: "right",

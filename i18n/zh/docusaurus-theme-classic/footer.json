@@ -1,0 +1,38 @@
+{
+  "link.title.Discover": {
+    "message": "发现更多",
+    "description": "The title of the footer links column with title=Discover in the footer"
+  },
+  "link.title.Connect": {
+    "message": "联系我",
+    "description": "The title of the footer links column with title=Connect in the footer"
+  },
+  "link.item.label.Learning": {
+    "message": "笔记",
+    "description": "The label of footer link with label=Learning linking to /docs"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Bookshelf": {
+    "message": "书架",
+    "description": "The label of footer link with label=Bookshelf linking to /bookshelf"
+  },
+  "link.item.label.Email me": {
+    "message": "Email me",
+    "description": "The label of footer link with label=Email me linking to mailto:binliu.zhang@gmail.com"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/in/binliu-zhang"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/cool4zbl"
+  },
+  "copyright": {
+    "message": "Copyright © 2014 - 2023 Binliu Zhang",
+    "description": "The footer copyright"
+  }
+}

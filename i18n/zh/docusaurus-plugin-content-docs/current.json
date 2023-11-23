@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "版本",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Bug Hunter's Diary": {
+    "message": "捉虫日记",
+    "description": "The label for category Bug Hunter's Diary in sidebar docs"
+  },
+  "sidebar.docs.category.English": {
+    "message": "English 学习",
+    "description": "The label for category English in sidebar docs"
+  },
+  "sidebar.docs.category.System Design": {
+    "message": "系统设计",
+    "description": "The label for category System Design in sidebar docs"
+  },
+  "sidebar.docs.category.Front-End": {
+    "message": "前端",
+    "description": "The label for category Front-End in sidebar docs"
+  }
+}

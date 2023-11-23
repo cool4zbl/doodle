@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Binliu Zhang",
+    "description": "The title in the navbar"
+  },
+  "item.label.Learning": {
+    "message": "笔记",
+    "description": "Navbar item with label Learning"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Bookshelf": {
+    "message": "书架",
+    "description": "Navbar item with label Bookshelf"
+  },
+  "item.label.Motivation": {
+    "message": "鸡血",
+    "description": "Navbar item with label Motivation"
+  },
+  "item.label.About": {
+    "message": "关于",
+    "description": "Navbar item with label About"
+  }
+}
