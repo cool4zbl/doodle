@@ -21,4 +21,4 @@ Hey, 这里是我但日常记录，包括但不限于一些笔记，想法，灵
 - [前端](./front-end): Discover the latest trends, solutions, and insights in the dynamic field of front-end
   development.
 
-I hope you will find something useful here.
+希望你能在这里有所思，有所得，有所悟。
