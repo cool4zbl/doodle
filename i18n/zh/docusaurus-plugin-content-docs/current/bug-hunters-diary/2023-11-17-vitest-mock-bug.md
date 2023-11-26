@@ -86,7 +86,7 @@ src/stores/CountryStore.ts (`import { useUserStore } from "./UserStore.ts";`)
 
 -->
 
-src/stores/UserStore.ts   (`import { i18n } from "../main";`) =>
+src/stores/UserStore.ts (`import { i18n } from "../main";`)
 
 -->
 
@@ -96,21 +96,27 @@ src/main.ts (`import router from "./router";`)
 
 src/router/index.ts (`router.beforeEach(() => {})`)
 
-这样就清楚了，原来是因为在 `main.ts` 中 import 了 `router/index.ts`，所以才会调用到 `router/index.ts` 中的代码。
+一层层依赖关系分析下来，这样就清楚了，我们确实是有在代码中依赖 `router/index.ts`.
 
 另外我们可以再研究下错误栈
 
 ```
+TypeError: Cannot read properties of undefined (reading 'beforeEach')
+    at /Users/binliu.zhang/workspace/ivr-client/src/router/index.ts:49:8
     at VitestExecutor.runModule (file:///Users/binliu.zhang/workspace/ivr-client/node_modules/vite-node/dist/client.mjs:341:5)
     at VitestExecutor.directRequest (file:///Users/binliu.zhang/workspace/ivr-client/node_modules/vite-node/dist/client.mjs:325:5)
     at VitestExecutor.cachedRequest (file:///Users/binliu.zhang/workspace/ivr-client/node_modules/vite-node/dist/client.mjs:188:14)
     at VitestExecutor.dependencyRequest (file:///Users/binliu.zhang/workspace/ivr-client/node_modules/vite-node/dist/client.mjs:222:12)
 ```
 
-于是我打断点 debug 了一下，发现是 `vitest` 在执行 test case 时，会先对 test case
-中引入每个文件都进行一次 `dependencyRequest`，并且会 `runModule`.
+看起来这是一段 vitest
+运行时逻辑，[源代码](https://github.com/vitest-dev/vitest/blob/main/packages/vitest/src/runtime/execute.ts#L244)在这里
 
 ![](./vitest-run-module.png)
+
+为了搞清楚这段代码是做啥，我启用了 debug breakpoints 大法，发现是 `vitest` 在执行 test case 时，会先对 test case
+的依赖进行静态分析，在 test case 运行前，对每个依赖的 module 都进行一次 `dependencyRequest`，并且会 `runModule`.
+
 
 我们在测试文件最开始调用了 `vi.mock("vue-router")`，It will always be executed before all imports.
 但是在这个 `router/index.ts` 中，我们发现 `router`
