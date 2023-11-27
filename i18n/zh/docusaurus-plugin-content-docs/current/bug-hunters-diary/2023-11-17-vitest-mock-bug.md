@@ -15,15 +15,16 @@ tags:
 
 ## Background
 
-我们目前开发的项目，无论前后端都是基于 TDD 的，对于前端我们使用 `vitest` 作为测试框架，同时有 `vue-test-utils` 作为测试工具，Tech
+我们一直采用 TDD 思想来开发我们的项目，无论是前端还是后端。
+对于前端我们使用 `vitest` 作为测试框架，同时有 `vue-test-utils` 作为测试工具，Tech
 stack: TypeScript + Vue3 + vue-router + pinia + vitest.
 
-上周同事提出她正在做的 从 okta userinfo API 读取当前用户 country group
-权限的功能，代码实现已经完成，但提交代码时却发现有几个已有的测试用例一直没法通过，且都是遇到的同一个问题,
+上周组内同事提出她正在做的功能，从 Okta userinfo API 读取当前用户 country group
+权限，代码实现已经完成，但在提交代码时却发现有几个测试用例一直没法通过，且都是遇到的同一个问题,
 
 > TypeError: Cannot read properties of undefined (reading 'beforeEach')
 
-同事一时半会不知道原因，也没有想到很好的解决方案，所以尝试引入了一个第三方库 vue-router-mock, 用来 mock vue-router，作为一个
+她一时半会不知道原因，也没有想到很好的解决方案，所以尝试引入了一个第三方库 vue-router-mock, 用来 mock vue-router，作为一个
 workaround.
 
 其实这个问题我之前也遇到过，但我们每次都找到其他的办法绕过去了；这次我觉得应该可以有不引入新的三方库的方法，所以就对此进行了研究，尝试了多种方法，最后修复了这个问题。
