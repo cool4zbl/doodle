@@ -6,12 +6,11 @@ tags:
   - Vitest
 ---
 
-# TDD - Vitest mock bug
+# TDD - Mocking vue-router with vitest
 
 ## Contents
 
 - How to mock vue-router in vitest
-- How to design a good store
 
 ## Background
 
@@ -113,6 +112,7 @@ TypeError: Cannot read properties of undefined (reading 'beforeEach')
 看起来这是一段 vitest
 运行时逻辑，[源代码](https://github.com/vitest-dev/vitest/blob/main/packages/vitest/src/runtime/execute.ts#L244)在这里
 
+![](./dependencyRequest.jpg)
 ![](./vitest-run-module.png)
 
 为了搞清楚这段代码是做啥，我启用了 debug breakpoints 大法，发现是 `vitest` 在执行 test case 时，会先对 test case
@@ -216,12 +216,3 @@ vi.mock("vue-router", async (importOriginal) => {
 
 综上，我们还是选择了在 test/setup.ts 中 mock 掉 `router/index.ts`，这样对于每个 test case, 我们可以根据需要
 mock `useRouter` & `useRoute` 的返回值。
-
-## CountryStore merged into UserStore
-
-严格上说，当我们利用 okta user group 来做 country group 权限相关后，countryStore 的数据基本都会来自用户登录鉴权后；不同于其他的
-store，比如 flowStore 数据只来源于 flowService, audioFileStore 的数据只来源于 audioFileService，而 countryStore, userStore
-这俩的数据来源其实是一个地方 – okta group API, 所以完全有理由将这俩 store 合并成一个，并且也不需要创建很多中间 computed
-value 如 userGroups, countriesCode, 这样可以直接在用户登录拿到 groups 数据后，对其进行处理拿到 countries 数据。同时不是
-computed
-而直接是单纯的 ref ，很容易在测试中设置不同的值，方便测试。
