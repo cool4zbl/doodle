@@ -45,20 +45,7 @@ workaround.
 
 能看出这个报错源于 `router/index.ts` 中的 `router.beforeEach(() => {})`.
 
-```ts
-// router/index.ts
-
-const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
-    routes,
-});
-
-router.beforeEach(() => {
-});
-
-export default router;
-
-```
+![router-index-ts](./router-index.jpg)
 
 ## Analysis
 
