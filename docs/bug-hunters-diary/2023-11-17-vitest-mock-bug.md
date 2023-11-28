@@ -33,6 +33,7 @@ This is a failed test case excerpted from the countrySelectorComponent spec at t
 countryStore.
 
 ![](./test-case.png)
+![](./useCountryStore.png)
 
 Running this test case resulted in an error, with the following message:
 
@@ -74,6 +75,8 @@ Then, I carefully examined the error message,
 ![](./test-failed-beforeEach.png)
 
 It turned out that `src/main.ts` imported `router/index.ts`.
+
+![](./main-ts-router.png)
 
 Following this train of thought, I analyzed this long dependency path.
 

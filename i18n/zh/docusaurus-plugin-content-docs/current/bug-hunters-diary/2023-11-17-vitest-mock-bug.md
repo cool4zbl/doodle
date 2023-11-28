@@ -35,6 +35,7 @@ workaround.
 这是从当时的 countrySelectorComponent spec 摘的一个失败的 test case, 以及当时的 countryStore 的代码。
 
 ![](./test-case.png)
+![](./useCountryStore.png)
 
 运行这个 test case 会报错，错误信息如下：
 
@@ -72,6 +73,9 @@ vi.mock("vue-router");
 ![](./test-failed-beforeEach.png)
 
 可以看到其实是 `src/main.ts` 中 import 了 `router/index.ts`.
+
+![](./main-ts-router.png)
+
 于是我顺着这个思路，分析了这条长长的依赖路径。
 
 src/tests/components/CountrySelectorComponent.spec.ts  (`import CountrySelectorComponent from "../../components/CountrySelectorComponent.vue";` )
