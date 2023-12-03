@@ -5,7 +5,7 @@ import AboutMeDesc from "./assets/_about_me.md";
 
 export default function About(): JSX.Element {
   return (
-    <Layout title={"About Me - Binliu Zhang"}>
+    <Layout title={"About Me"}>
       <main>
         <div className="container padding-horiz--lg padding-vert--lg">
           <AboutMe

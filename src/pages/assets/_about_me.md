@@ -32,6 +32,21 @@ shared by Julia Evans
 > browser, the kernel, the operating system, the network layers, your database, HTTP, whatever you’re running on top of)
 > is essential if you want to do technically innovative work and be able to solve hard problems.
 
+## My Focus Areas
+
+- 👩🏽‍💻 Building large-scale web applications / DevEx / Edge Computing
+- 🧰 Exploring new tools and technologies
+- 🤖 Automating mundane tasks
+- 🧠 Exploring the depths of algorithms and distributed systems
+- 📚 Reading books on personal growth and self-improvement
+
+I would love to do more of:
+
+- 🎨 Creating art with code
+- 📝 Writing about my learnings and experiences
+- 🎙️ Sharing my knowledge with the community
+
+
 ## Life Beyond Code...
 
 - 👩‍🎤 Getting lost in melodies (_Rock / LoFi / Alternative / Electronic / ..._)
