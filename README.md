@@ -10,6 +10,13 @@ It is built using [Docusaurus](https://docusaurus.io/)
 yarn install
 yarn start
 yarn build
+
+# To run for a specific locale
+npm run start -- --locale zh
+
+# To write translations for a specific locale
+npm run write-translations -- --locale zh
+
 ```
 
 ### Deployment
