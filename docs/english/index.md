@@ -4,17 +4,22 @@ sidebar_position: 1
 
 # Why having this?
 
-As you may have known, I'm a software engineer who just relocated from China to the Netherlands. This is my first time
-working abroad, and my first time working in a fully immersive English environment.
+As you might already know, I'm a software engineer who recently relocated from China to the Netherlands. This marks my
+first experience working abroad and also my first venture into a fully immersive English-speaking environment.
+This opportunity is thrilling, yet the reality is that my current proficiency in English falls short of effortlessly
+engaging light-hearted banter with my foreign friends. Occasionally, this language barrier even leads to embarrassing
+moments when I struggle to understand or express myself adequately.
 
-But my original English level is not that good, so learning English is actually an emergent thing for me. I need to
-improve my English level as soon as possible so that I can better integrate into this environment. This is actually a
-good opportunity.
+Thus, enhancing my English skills swiftly has become an urgent priority for me, vital to better assimilating into this
+new
+setting.
 
-Here, I decided to use the method mentioned
-in [The Ultimate Guide To Improve Your English In 30 Days](https://www.youtube.com/watch?v=NacMkOzo2J8&ab_channel=SpeakEnglishWithTiffani)
-to learn English.
+To address this, I've chosen to follow the strategies outlined
+in [The Ultimate Guide To Improve Your English In 30 Days](https://www.youtube.com/watch?v=NacMkOzo2J8&ab_channel=SpeakEnglishWithTiffani).
+This approach seems promising for elevating my command of the language, and I'm excited to get started.
 
-I will maintain 3 journals -- "vocabulary", "study notes", "essay writing", which will help me improve my vocabulary,
-reading,
-listening, writing. I hope to update these journals daily, as a systematic way to enhance my English proficiency.
+In line with this, I plan to maintain three dedicated journals — "Vocabulary", "Study Notes", and "Essay Writing". These
+will serve as a pivotal tool in argumenting my capabilities in vocabulary, reading, listening, and writing. I intend to
+update these journals daily, fostering a disciplined and systematic approach steadily advance my English language
+skills.
+
