@@ -32,18 +32,18 @@ the issue.
 This is a failed test case excerpted from the countrySelectorComponent spec at the time, along with the code for the
 countryStore.
 
-![](./test-case.png)
-![](./useCountryStore.png)
+![](test-case.png)
+![](useCountryStore.png)
 
 Running this test case resulted in an error, with the following message:
 
-![test-failed-beforeEach](./test-failed-beforeEach.png)
+![test-failed-beforeEach](test-failed-beforeEach.png)
 
 > TypeError: Cannot read properties of undefined (reading 'beforeEach')
 
 The error originated from `router/index.ts` in the line `router.beforeEach(() => {})`.
 
-![router-index-ts](./router-index.jpg)
+![router-index-ts](router-index.jpg)
 
 ## Analysis
 
@@ -59,11 +59,11 @@ not have been executed.
 
 Then, I carefully examined the error message,
 
-![](./test-failed-beforeEach.png)
+![](test-failed-beforeEach.png)
 
 It turned out that `src/main.ts` imported `router/index.ts`.
 
-![](./main-ts-router.png)
+![](main-ts-router.png)
 
 Following this train of thought, I analyzed this long dependency path.
 
@@ -109,8 +109,8 @@ I enabled debug breakpoints and found that vitest performs static
 analysis on the dependencies of a test case before executing it. It runs dependencyRequest for each module dependency
 and then runModule.
 
-![](./dependencyRequest.jpg)
-![](./vitest-run-module.png)
+![](dependencyRequest.jpg)
+![](vitest-run-module.png)
 
 We can see it will load mocks first, then request the real dependencies and run them.
 

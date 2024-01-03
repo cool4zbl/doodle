@@ -11,9 +11,9 @@ development.
 
 I'm originally from China, but I'm now living in the Netherlands.
 
-Currently, I'm weaving magic by creating a platform that integrates diverse apps using the microservices/SingleSPA
+Currently, I'm weaving magic by creating a platform that integrates diverse apps using the _microservices/SingleSPA_
 architecture.
-Alongside, I'm on a continuous journey, exploring the enigmatic depths of **algorithms** and **distributed systems**.
+Alongside, I'm on a continuous journey, exploring the enigmatic depths of _algorithms_ and _distributed systems_.
 
 I'm a tool aficionado, always on the hunt for productivity hacks. When it comes to my editor, I swear by Vimer!
 
@@ -32,7 +32,7 @@ shared by Julia Evans
 > browser, the kernel, the operating system, the network layers, your database, HTTP, whatever you’re running on top of)
 > is essential if you want to do technically innovative work and be able to solve hard problems.
 
-## My Focus Areas
+## My Interested Areas
 
 - 👩🏽‍💻 Building large-scale web applications / DevEx / Edge Computing
 - 🧰 Exploring new tools and technologies

@@ -182,16 +182,16 @@ const config = {
             title: "Connect",
             items: [
               {
-                label: "Email me",
-                href: "mailto:binliu.zhang@gmail.com",
-              },
-              {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/in/binliu-zhang",
               },
               {
                 label: "GitHub",
                 href: "https://github.com/cool4zbl",
+              },
+              {
+                label: "Email me",
+                href: "mailto:binliu.zhang@gmail.com",
               },
             ],
           },

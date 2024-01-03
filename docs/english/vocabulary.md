@@ -10,6 +10,9 @@ sidebar_position: 2
 
 ## Travel
 
+- brunch spot
+- blast
+
 ## Psychology
 
 
