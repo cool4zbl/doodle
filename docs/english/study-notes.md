@@ -19,10 +19,10 @@ _TODO_
 - Have you (ever) been to ...
 - I'll have to try it out sometime.
 - Have you tried rock climbing before?/ Have you ever watched an IMAX movie?
-- Rock climbing is a blast! It's challenging, but the feeling of accomplishment when you reach the top is amazing.
-- I'm afraid of heights, so rock climbing isn't really my thing. But I'd be happy to cheer you on from the ground!
-- Watching movies in IMAX 3D is such an immersive experience, isn't it?
-- I haven't been to ... before, but I'm always up for trying new places!
+- Rock climbing is **a blast**! It's challenging, but the feeling of accomplishment when you reach the top is amazing.
+- I'm afraid of heights, so rock climbing isn't really my thing. But I'd be happy to **cheer you on** from the ground!
+- Watching movies in IMAX 3D is such an **immersive experience**, isn't it?
+- I haven't been to ... before, but I'm **always up for** trying new places!
 
 ## Psychology
 
