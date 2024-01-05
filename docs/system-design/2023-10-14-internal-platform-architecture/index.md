@@ -1,5 +1,6 @@
 ---
 title: From Internal Operation Platform to Internal Platform
+
 ---
 # From Internal Operation Platform to Internal Platform
 
@@ -11,7 +12,7 @@ Below is the architecture of an internal operation platform. In a typical setup,
 - **Internal Operation API**: A set of APIs for the internal operation portal to consume.
 - **Internal Operation data**: A dataset for the internal operation API to utilize.
 
-![Internal Operation Platform Architecture](./int_ops_platform.png#light-mode)![Internal Operation Platform Architecture](./int_ops_platform_dark.png#dark-mode)
+![Internal Operation Platform Architecture](int_ops_platform.png#light-mode)![Internal Operation Platform Architecture](int_ops_platform_dark.png#dark-mode)
 
 
 ## Internal Platform Architecture
@@ -20,7 +21,7 @@ In the meantime, developers are tasked with maintaining these platforms, each bu
 
 Below is the architecture of this integrated internal platform.
 
-![Internal Platform Architecture](./int_ops_w_platform.png#light-mode)![Internal Operation Platform Architecture](./int_ops_w_platform_dark.png#dark-mode)
+![Internal Platform Architecture](int_ops_w_platform.png#light-mode)![Internal Operation Platform Architecture](int_ops_w_platform_dark.png#dark-mode)
 
 The platform team is developing an infrastructure-as-a-service platform, enabling other operations teams to create and distribute internal and client-facing web portals, widgets, and backend data sources. This platform offers reusable functionality and access to common company services, such as API and SSO integration, Web Analytics support, and a static asset hosting solution. Additionally, we aim to standardize the web application development ecosystem, establishing infrastructure for application bootstrapping, local development sandboxes, build/deploy pipelines, and testing frameworks to streamline the application development lifecycle.
 
