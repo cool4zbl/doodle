@@ -194,8 +194,6 @@ import singleSpaVue from "single-spa-vue";
 import {createApp, h} from "vue";
 import App from "./App.vue";
 
-const pinia = createPinia();
-
 const vueLifecycles = singleSpaVue({
     createApp,
     appOptions: {
@@ -207,6 +205,7 @@ const vueLifecycles = singleSpaVue({
     },
    // highlight-start
     handleInstance(app, props: { countries: Country[] }) {
+        const pinia = createPinia();
         app.use(pinia);
         // All states in a store need initial values.
         pinia.state.value = {
@@ -229,7 +228,8 @@ and usage methods.
 Key Takeaways:
 
 1. **Initialization**: Setting the initial state in the `handleInstance` function after `app.use(pinia)` is crucial.
-2. **Completeness**: All store states in a store require initial values to avoid undefined errors.
+2. **Completeness**: If we set initial state using `pinia.state.value`, all other initial state setting in the store
+   definition will be ignored. It means if no other setting function is called, these state will be `undefined`.
 3. **Client-Side Hydration**: Ensure to hydrate Pinia's state before any `useStore()` function call on the client side.
 
 ## Conclusion
@@ -263,7 +263,6 @@ export default function makeSeparatedStore<
       return definedStores.get(storeKey)();
    };
 }
-
 export const useCountryStore = makeSeparatedStore(
         (key: string, props: any) => defineStore(key, () => {
            const countries = ref<Country[]>(props.countries.sort((a, b) => a.name.localeCompare(b.name)));
@@ -272,5 +271,4 @@ export const useCountryStore = makeSeparatedStore(
            return {countries, activeCountry};
         })
 )
-
 ```
