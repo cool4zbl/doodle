@@ -6,6 +6,11 @@ sidebar_position: 3
 
 ## Technology
 
+5Ws
+When founders have accents so strong that people can't understand what they're saying.
+
+If you want your startup off the ground well, you'd better speak English well.
+
 _TODO_
 
 ## Politics
