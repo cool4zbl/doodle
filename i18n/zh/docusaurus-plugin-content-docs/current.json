@@ -18,5 +18,9 @@
   "sidebar.docs.category.Front-End": {
     "message": "前端",
     "description": "The label for category Front-End in sidebar docs"
+  },
+  "sidebar.docs.category.Initialize Pinia Store with Single-SPA Props": {
+    "message": "Initialize Pinia Store with Single-SPA Props",
+    "description": "The label for category Initialize Pinia Store with Single-SPA Props in sidebar docs"
   }
 }
