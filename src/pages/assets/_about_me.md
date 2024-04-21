@@ -1,7 +1,6 @@
 # Greetings, Explorer! 👋
 
-Hello!
-I'm Binliu, and this is my digital space where I dive deep into the unknown waters of
+Hello! I'm Binliu, and this is my space where I dive deep into the unknown waters of
 software engineering, personal growth, and life's myriad adventures.
 
 ## A Bit About Me...
@@ -22,6 +21,12 @@ I share insights on self-belief, continuous self-improvement, and my musings on 
 
 ## My Philosophy
 
+I cherish the spirit of exploration and learning.
+
+I cherish intuition and creativity.
+
+Aha! moment is my favorite moment.
+
 I'm a big fan of Steve Jobs, and I live by his words:
 _Stay hungry; stay foolish._
 
@@ -34,7 +39,7 @@ shared by Julia Evans
 
 ## My Interested Areas
 
-- 👩🏽‍💻 Building large-scale web applications / DevEx / Edge Computing
+- 👩🏽‍💻 Building large-scale web applications / DevEx
 - 🧰 Exploring new tools and technologies
 - 🤖 Automating mundane tasks
 - 🧠 Exploring the depths of algorithms and distributed systems
@@ -55,4 +60,4 @@ I would love to do more of:
 - 🍳 Whipping up culinary delights
 - 🚴‍♀️‍️ Biking through the scenic routes of the Netherlands
 
-Curious about my professional journey? Here's my [Resume](./binliu-zhang-resume.pdf).
+Curious about my professional journey? Here's my [Resume](./Binliu-Zhang-Senior-Software-Engineer-Resume.pdf).
