@@ -1,4 +1,4 @@
-# Greetings, Explorer! 👋
+# 👋
 
 Hello! I'm Binliu, and this is my space where I dive deep into the unknown waters of
 software engineering, personal growth, and life's myriad adventures.
@@ -25,25 +25,49 @@ I cherish the spirit of exploration and learning.
 
 I cherish intuition and creativity.
 
-Aha! moment is my favorite moment.
+The "Aha!" moment is my favorite.
 
-I'm a big fan of Steve Jobs, and I live by his words:
-_Stay hungry; stay foolish._
+I'm a big fan of Steve Jobs, and I live by his words: Stay hungry; stay foolish.
 
 My transition from Electrical Engineering to Computer Science as a self-taught software engineer mirrors the sentiments
-shared by Julia Evans
+shared by Julia Evans:
 
-> I have one main opinion about programming, which is that deeply understanding the underlying systems you use (the
-> browser, the kernel, the operating system, the network layers, your database, HTTP, whatever you’re running on top of)
-> is essential if you want to do technically innovative work and be able to solve hard problems.
+I have one main opinion about programming, which is that deeply understanding the underlying systems you use (the
+browser, the kernel, the operating system, the network layers, your database, HTTP, whatever you’re running on top of)
+is essential if you want to do technically innovative work and be able to solve hard problems.
+
+I always resist being defined by tags like "you’re FE," or "you’re BE," which suggest you shouldn’t step outside your
+comfort zone.
+
+I’m not that kind of person; I always want to figure out the underlying things, the principles underneath the interface.
+I love to dive deep into the underlying systems and understand how things work under the hood.
+
+That’s why I taught myself web development before graduation, even though my major was Electrical Engineering. I was
+amazed by the web (okay, hardware is hard...) and became a front-end developer after graduation. In my first job, I not
+only developed skills but also learned the spirit of craftsmanship because what you change will alter the experience of
+thousands of millions of users, so you must awe when shipping to production.
+
+Then, in my job at AntGroup, I worked on building an A/B Testing platform. Statistics and probability are amazing; "If
+you cannot measure it, how can you improve it?" I learned not only the theory but also some data engineering skills,
+like how to build a data platform and data pipelines, etc.
+
+But I didn’t stop there; after 5 years in front-end/full-stack roles, upon joining Grab, I transitioned to a backend
+engineer. The most significant difference between FE and BE is that you switch your perspective on the world. The
+technology and the theory are also different. So, I studied distributed systems, algorithms, Go, cloud services, etc.
+Eventually, I learned to build scalable, reliable, and high-performance systems to serve map data to millions of users.
+
+Now, I'm learning how to build a platform that integrates diverse apps using the MFE architecture utilizing SingleSPA
+and Kotlin (oh, new language, new world).
+
+So, stay hungry, stay foolish, and keep learning.
 
 ## My Interested Areas
 
 - 👩🏽‍💻 Building large-scale web applications / DevEx
 - 🧰 Exploring new tools and technologies
 - 🤖 Automating mundane tasks
-- 🧠 Exploring the depths of algorithms and distributed systems
 - 📚 Reading books on personal growth and self-improvement
+- 🧠 Exploring the depths of algorithms and distributed systems
 
 I would love to do more of:
 
