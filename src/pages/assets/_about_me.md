@@ -1,6 +1,6 @@
-# 👋
+# 👋 Hey, I'm Binliu!
 
-Hello! I'm Binliu, and this is my space where I dive deep into the unknown waters of
+This is my space where I dive deep into the unknown waters of
 software engineering, personal growth, and life's myriad adventures.
 
 ## A Bit About Me...

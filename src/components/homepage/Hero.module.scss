@@ -23,7 +23,6 @@
 }
 
 .subtitle {
-  margin: 0;
 
   @include small-size {
     font-size: 1.2rem;
@@ -35,4 +34,13 @@
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.linkToAbout {
+  margin: .4em 0;
+  color: rgba(255, 255, 255, 0.7);
+
+  :hover {
+    color: var(--ifm-color-primary);
+  }
 }
