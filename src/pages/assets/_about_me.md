@@ -8,10 +8,10 @@ software engineering, personal growth, and life's myriad adventures.
 I'm a [software engineer](https://github.com/cool4zbl) with over 8 years of experience, specializing in large-scale web
 development.
 
-I'm originally from China, but I'm now living in the Netherlands.
+I'm originally from China, but I'm now [living in the Netherlands](./blog/restart-life-abroad-at-30).
 
-Currently, I'm weaving magic by creating a platform that integrates diverse apps using the _microservices/SingleSPA_
-architecture.
+I write code at day, and read books at night.
+
 Alongside, I'm on a continuous journey, exploring the enigmatic depths of _algorithms_ and _distributed systems_.
 
 I'm a tool aficionado, always on the hunt for productivity hacks. When it comes to my editor, I swear by Vimer!
@@ -27,23 +27,26 @@ I cherish intuition and creativity.
 
 The "Aha!" moment is my favorite.
 
-I'm a big fan of Steve Jobs, and I live by his words: Stay hungry; stay foolish.
+I'm a big fan of Steve Jobs, and I live by his words: _Stay hungry; stay foolish._
 
 My transition from Electrical Engineering to Computer Science as a self-taught software engineer mirrors the sentiments
 shared by Julia Evans:
 
-I have one main opinion about programming, which is that deeply understanding the underlying systems you use (the
-browser, the kernel, the operating system, the network layers, your database, HTTP, whatever you’re running on top of)
-is essential if you want to do technically innovative work and be able to solve hard problems.
+> I have one main opinion about programming, which is that deeply understanding the underlying systems you use (the
+> browser, the kernel, the operating system, the network layers, your database, HTTP, whatever you’re running on top of)
+> is essential if you want to do technically innovative work and be able to solve hard problems.
 
-I always resist being defined by tags like "you’re FE," or "you’re BE," which suggest you shouldn’t step outside your
+Same as me, I always resist being defined by tags like "you’re FE," or "you’re BE," which suggest you shouldn’t step
+outside your
 comfort zone.
 
 I’m not that kind of person; I always want to figure out the underlying things, the principles underneath the interface.
 I love to dive deep into the underlying systems and understand how things work under the hood.
 
 That’s why I taught myself web development before graduation, even though my major was Electrical Engineering. I was
-amazed by the web (okay, hardware is hard...) and became a front-end developer after graduation. In my first job, I not
+amazed by the web (okay, hardware is hard...) and became a front-end developer after graduation.
+
+In my first job at Douban, I not
 only developed skills but also learned the spirit of craftsmanship because what you change will alter the experience of
 thousands of millions of users, so you must awe when shipping to production.
 
