@@ -1,0 +1,64 @@
+# Binary Search
+
+Binary search is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.
+
+## Time Complexity & Space Complexity
+
+T(n) = `O(log n)`, logarithmic time, where n is the number of elements of the array.
+
+S(n) = `O(1)`, constant space, no extra space is used.
+
+
+## Implementation
+
+Actually, I find binary search can be frustrated sometimes. The key point is to find the correct boundary of the search range, and when to exist the loop.
+
+### Template #1, `left <= right`, find the target
+
+```python
+def binary_search(arr, target):
+    left = 0
+    right = len(arr) - 1
+
+    # highlight-start
+    # search space is [left, right]
+    # exit when left > right, no candidates in the search space,
+    # which means the target is not in the array, return -1
+    while left <= right:
+    # highlight-end
+        mid = left + (right - left) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
+```
+
+### Template #2, `left < right`, find the left boundary of the target
+
+```python
+def binary_search_left(arr, target):
+    left = 0
+    right = len(arr)
+
+    # highlight-start
+    # search space is [left, right)
+    # exit when left == right, 1 more candidate in the search space,
+    # which means the target is not in the array, return -1
+    while left < right:
+    # highlight-end
+        mid = left + (right - left) // 2
+        if arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid
+
+    # highlight-start
+    # Post-processing required since the loop is exited when left == right;
+    # need to assess if the remaining element meets the condition.
+    return left if left < len(arr) and arr[left] == target else -1
+    # highlight-end
+```
