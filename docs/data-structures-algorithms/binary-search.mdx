@@ -45,9 +45,11 @@ def binary_search_left(arr, target):
     right = len(arr)
 
     # highlight-start
-    # search space is [left, right)
-    # exit when left == right, 1 more candidate in the search space,
-    # which means the target is not in the array, return -1
+    """
+     search space is [left, right)
+     exit when left == right, 1 more candidate in the search space,
+     which means the target is not in the array, return -1
+    """
     while left < right:
     # highlight-end
         mid = left + (right - left) // 2
@@ -57,8 +59,45 @@ def binary_search_left(arr, target):
             right = mid
 
     # highlight-start
+    """
     # Post-processing required since the loop is exited when left == right;
     # need to assess if the remaining element meets the condition.
+    """
     return left if left < len(arr) and arr[left] == target else -1
     # highlight-end
+```
+
+### Template #3, `left + 1 < right`, find the right boundary of the target
+
+```python
+
+def binary_search_right(arr, target):
+    left = 0
+    right = len(arr)
+
+    # highlight-start
+    """
+    exit when left + 1 == right, 2 more candidate in the search space,
+    which means the target is not in the array, return -1
+    """
+    while left + 1 < right:
+    # highlight-end
+        mid = left + (right - left) // 2
+        if arr[mid] < target:
+            left = mid
+        else:
+            right = mid
+
+    # highlight-start
+    """
+    Post-processing required since the loop is exited when left + 1 == right;
+    need to assess if the remaining element meets the condition.
+    """
+    if arr[left] == target:
+        return left
+    if arr[right] == target:
+        return right
+    return -1
+    # highlight-end
+
 ```
