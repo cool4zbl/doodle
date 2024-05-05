@@ -1,12 +1,12 @@
+import Link from "@docusaurus/Link"
 import clsx from "clsx"
 import React, { FunctionComponent } from "react"
-import Link from "@docusaurus/Link"
 
 import styles from "./Hero.module.scss"
 
 export const Hero: FunctionComponent = () => {
     return (
-        <header className={clsx("hero hero--primary", styles.heroBanner)}>
+        <header className={clsx("hero", styles.heroBanner)}>
             <div className="container">
                 <h1 className={clsx("hero__title", styles.title)}>
                     Hi, I'm{" "}
