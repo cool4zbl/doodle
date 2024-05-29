@@ -106,7 +106,9 @@ const config = {
                 },
             ],
             colorMode: {
-                respectPrefersColorScheme: true,
+                defaultMode: "dark",
+                disableSwitch: false,
+                respectPrefersColorScheme: false,
             },
             navbar: {
                 title: "Binliu Zhang",
@@ -127,6 +129,12 @@ const config = {
                         label: "Blog",
                         position: "left",
                     },
+                    // {
+                    //     to: "/work",
+                    //     docId: "Work",
+                    //     position: "left",
+                    //     label: "Work",
+                    // },
                     {
                         to: "/bookshelf",
                         docId: "bookshelf",
