@@ -30,11 +30,13 @@ const config = {
     },
 
     plugins: [
-        "vercel-analytics",
-        {
-            debug: true,
-            mode: "auto",
-        },
+        [
+            "vercel-analytics",
+            {
+                debug: true,
+                mode: "auto",
+            },
+        ],
         "docusaurus-plugin-sass",
         [
             "@docusaurus/plugin-ideal-image",
