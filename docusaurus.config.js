@@ -30,6 +30,11 @@ const config = {
     },
 
     plugins: [
+        "vercel-analytics",
+        {
+            debug: true,
+            mode: "auto",
+        },
         "docusaurus-plugin-sass",
         [
             "@docusaurus/plugin-ideal-image",
@@ -64,6 +69,7 @@ const config = {
                         type: "all",
                         copyright: `Copyright © 2014 - ${new Date().getFullYear()} Binliu Zhang`,
                     },
+                    showLastUpdateTime: true,
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.scss"),
@@ -79,16 +85,10 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             docs: {
-                sidebar: {
-                    hideable: true,
-                    autoCollapseCategories: false,
-                },
+                sidebar: {},
             },
             blog: {
-                sidebar: {
-                    hideable: true,
-                    autoCollapseCategories: false,
-                },
+                sidebar: {},
             },
 
             metadata: [
