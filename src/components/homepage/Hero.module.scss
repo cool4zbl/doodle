@@ -28,15 +28,22 @@
 }
 
 .highlighted {
-  background: linear-gradient(to left, #0054ad 0%, #b8fb3c 100%);
+  background: linear-gradient(to left, purple 0%, pink 50%, blue 100%);
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.05em;
 }
+.job {
+  background: linear-gradient(to left, teal 30%, cyan 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .linkToAbout {
   margin: .4em 0;
+  color: teal;
 
   :hover {
     color: var(--ifm-color-primary);
