@@ -12,13 +12,10 @@ export const Hero: FunctionComponent = () => {
                     Hi, I'm{" "}
                     <span className={styles.highlighted}>Binliu Zhang</span>,
                     <br />
-                    <span className={styles.job}>
-                    a software engineer.
-                    </span>
+                    <span className={styles.job}>a software engineer.</span>
                 </h1>
                 <p className={clsx("hero__subtitle", styles.subtitle)}>
-                    Open-source enthusiast, interested in personal growth and
-                    tech trends.
+                    Curious Builder & Personal Growth Enthusiast,
                     <br />
                     Welcome to my playground.
                 </p>
