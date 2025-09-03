@@ -68,9 +68,9 @@ Task ... ran out of memory
 
 我们首先打开了 JVM Metrics 监控仪表盘。修复前的图表令人震惊：
 
-最明显的异常是 **`GC Old Gen Size (老年代大小)`** 图表。可以清晰地看到，老年代的内存占用呈现出一种**只增不减、持续攀升**的态势。这强烈暗示有大量对象被错误地长期持有，无法被 GC 回收， Heap usage 常年保持在 500M 左右。对于一个主要数据都放 Redis 缓存，无需保存状态的 gateway 服务来说，这个数字显得有些奇怪。
-
 ![JVM-Metrics-Datadog-before.png](deep-dive-oom-killed-jvm-memory/JVM-Metrics-Datadog-before.png)
+
+最明显的异常是 **`GC Old Gen Size (老年代大小)`** 图表。可以清晰地看到，老年代的内存占用呈现出一种**只增不减、持续攀升**的态势。这强烈暗示有大量对象被错误地长期持有，无法被 GC 回收， Heap usage 常年保持在 500M 左右。对于一个主要数据都放 Redis 缓存，无需保存状态的 gateway 服务来说，这个数字显得有些奇怪。
 
 ### **二、深入内存快照（Heap Dump）的“犯罪现场”**
 
@@ -105,7 +105,7 @@ Task ... ran out of memory
 
 我们通过 Spring Actuator 的 `/heapdump`端点，捕获了一份堆内存的快照文件（`.hprof`）。这里有个小插曲，虽然我之前有 k8s pods exec 权限，可以轻松 shell 进 pod 执行各种 JDK 命令和下载 heapdump, 不过出于安全考虑，SRE 最近收回了这一权限，只能通过 k8s pods debug 方式操作。所以我只能挑了一台看起来内存马上要爆了的机器，使用 kubectl 转发机器 8080 端口流量到本地，然后本地访问 Spring Actuator 的 `localhost:8080/heapdump`下载 heapdump 到本地。
 
-使用内存分析工具MAT (Memory Analyzer Tool)打开它，信息量还是挺大的：（补截图）
+使用内存分析工具MAT (Memory Analyzer Tool)打开它，信息量还是挺大的：
 
 1. **嫌疑人A：巨大的`byte[]`数组与Netty**`Dominator Tree`视图显示，堆中有几个异常巨大的`byte[]`数组。通过 `Path to GC Roots`追溯其引用链，发现它们最终都指向了`reactor.netty`的内存池组件 (`PoolChunk`)。这让我们初步怀疑，是否存在 **Netty 缓冲区泄漏**，于是添加了 `-Dio.netty.leakDetection.level=PARANOID` JVM 参数，以便在日志中捕获 Netty 内存分配未释放的报错。
     

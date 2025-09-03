@@ -52,10 +52,11 @@ Distinguishing between these two core concepts was crucial:
 - **`OutOfMemoryError` (OOM Error)**: This is the JVM's "internal conflict." The JVM realizes its own **Heap Memory** is exhausted and proactively throws an exception. It's a relatively "graceful" way to fail.
 - **`OOMKilled`**: This is the container's "external conflict." Kubernetes detects that the **total memory footprint of the container** (Heap + Non-Heap + Native Memory, etc.) has exceeded its configured limit (`limits.memory`). To protect the stability of the entire node, the OS acts like an unforgiving city warden, forcibly evicting the rogue process.
 
-**A Brief on the JVM Memory Model (TODO: Link to a separate JVM memory blog)**
+**A Brief on the JVM Memory Model**
 
 - **Heap Memory**: Stores all object instances created with `new`. It's divided into a **Young Generation** and an **Old Generation**. Objects are born in the Young Gen and are promoted to the Old Gen if they survive multiple Garbage Collection (GC) cycles. A continuously growing Old Gen usually indicates a memory leak.
 - **Non-Heap Memory**: In Java 8+, this primarily refers to **Metaspace**, which stores class definitions, methods, and other metadata. A continuously growing Metaspace often signals a **ClassLoader Leak**.
+- (TODO: Link to a separate JVM memory blog)
 
 Of course, at the beginning, I had no idea whether this was a container configuration issue (e.g., the app just needed more than the 1GB of memory it was allocated) or a bug in our application code. I had no choice but to start wading through the water.
 
@@ -67,9 +68,9 @@ After consulting with various AI teachers (ChatGPT, Gemini, DeepSeek), I devised
 
 First, I opened our JVM Metrics dashboard. The chart before the fix was shocking:
 
-The most glaring anomaly was the **`GC Old Gen Size`** chart. It clearly showed the memory usage of the Old Generation on a relentless, **upward climb that never decreased**. This strongly suggested that a large number of objects were being improperly held long-term and couldn't be collected by GC. The heap usage consistently stayed around 500MB, which seemed odd for a stateless gateway service that keeps most of its data in a Redis cache.
-
 ![JVM-Metrics-Datadog-before.png](deep-dive-oom-killed-jvm-memory/JVM-Metrics-Datadog-before.png)
+
+The most glaring anomaly was the **`GC Old Gen Size`** chart. It clearly showed the memory usage of the Old Generation on a relentless, **upward climb that never decreased**. This strongly suggested that a large number of objects were being improperly held long-term and couldn't be collected by GC. The heap usage consistently stayed around 500MB, which seemed odd for a stateless gateway service that keeps most of its data in a Redis cache.
 
 ### **2. The "Crime Scene" Inside the Heap Dump**
 
