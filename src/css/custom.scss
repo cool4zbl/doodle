@@ -5,6 +5,8 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
 :root {
   --pg-red: #e74c3c;
   --pg-green: #b8fb3c;
@@ -64,8 +66,6 @@ html[data-theme='dark'] {
   --ifm-hero-background-color: #101010;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-
 h1,
 h2,
 h3,
@@ -76,7 +76,7 @@ h5 {
 }
 
 // LINKS
-.container a {
+.theme-layout-main a:not(nav a) {
   text-decoration: underline;
   text-underline-offset: .2rem;
 }
