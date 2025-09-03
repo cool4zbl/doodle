@@ -36,15 +36,6 @@
   --ifm-hero-background-color: #fff;
 }
 
-html[date-theme="dark"] {
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-link-color: var(--ifm-color-primary);
-
-  --ifm-background-color: #101010;
-  --ifm-background-surface-color: #101010;
-  --ifm-hero-background-color: #101010;
-}
-
 html[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -64,6 +55,13 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: #4ed4d4;
   --ifm-color-primary-lighter: #59d7d7;
   --ifm-color-primary-lightest: #79dede;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-link-color: var(--ifm-color-primary);
+
+  --ifm-background-color: #101010;
+  --ifm-background-surface-color: #101010;
+  --ifm-hero-background-color: #101010;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
