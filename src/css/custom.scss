@@ -76,7 +76,7 @@ h5 {
 }
 
 // LINKS
-.theme-layout-main a:not(nav a) {
+.theme-layout-main a:not(nav a, .card, .theme-doc-toc-desktop a, .theme-doc-toc-mobile a) {
   text-decoration: underline;
   text-underline-offset: .2rem;
 }

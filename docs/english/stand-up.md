@@ -1,4 +1,0 @@
-# Stand-up
-
-## Alternative words
-
