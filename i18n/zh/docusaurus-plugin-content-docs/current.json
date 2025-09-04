@@ -22,5 +22,9 @@
   "sidebar.docs.category.Initialize Pinia Store with Single-SPA Props": {
     "message": "Initialize Pinia Store with Single-SPA Props",
     "description": "The label for category Initialize Pinia Store with Single-SPA Props in sidebar docs"
+  },
+  "sidebar.docs.category.Data Structures and Algorithms": {
+    "message": "Data Structures and Algorithms",
+    "description": "The label for category Data Structures and Algorithms in sidebar docs"
   }
 }
