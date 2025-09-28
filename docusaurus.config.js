@@ -29,6 +29,10 @@ const config = {
         },
     },
 
+    clientModules: [
+        require.resolve('./src/clientModules/speedInsights.js'),
+    ],
+
     plugins: [
         [
             "vercel-analytics",
