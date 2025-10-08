@@ -176,3 +176,30 @@ html[data-theme="dark"] {
     }
   }
 }
+
+// New Website Button Styling
+.header-new-website-link {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  color: white !important;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ifm-global-radius);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+  }
+}
+
+html[data-theme="dark"] {
+  .header-new-website-link {
+    background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+    box-shadow: 0 2px 8px rgba(57, 207, 207, 0.3);
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(57, 207, 207, 0.4);
+    }
+  }
+}

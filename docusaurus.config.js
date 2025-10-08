@@ -161,6 +161,12 @@ const config = {
                     },
                     // Right
                     {
+                        label: "🚀 New Website",
+                        href: "https://binliuzhang.com",
+                        position: "right",
+                        className: "header-new-website-link",
+                    },
+                    {
                         type: "localeDropdown",
                         position: "right",
                     },
