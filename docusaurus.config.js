@@ -162,7 +162,7 @@ const config = {
                     // Right
                     {
                         label: "🚀 New Website",
-                        href: "https://binliuzhang.com",
+                        href: "https://binliuzhang.com?utm_source=zhangbinliu.me&utm_medium=referral&utm_campaign=header-link",
                         position: "right",
                         className: "header-new-website-link",
                     },
